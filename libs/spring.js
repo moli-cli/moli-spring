@@ -32,16 +32,16 @@ module.exports = {
                 inquirer.prompt([{
                     type: 'list',
                     name: 'selectRepo',
-                    message: 'Please select :',
+                    message: 'Please Select Template:',
                     choices: repoNameData
                 }]).then(function (answers) {
                     var selectName = answers.selectRepo.split(' - ')[0];
                     var questions = [{
                         type: 'input',
                         name: 'selectName',
-                        message: 'default project name :',
+                        message: 'Input Your Project Name (default:moli-demo):',
                         default: function () {
-                            return 'moli-spring-boot-demo';
+                            return 'moli-demo';
                         }
                     }];
                     inquirer.prompt(questions).then(function (answers) {
@@ -60,7 +60,7 @@ module.exports = {
                             log.logInLine(".", "#00bb00");
                         }, 1000);
                         //TODO 开始下载
-                        download(`yymoli/${template}`, `${name}`, function (err) {
+                        download(`molispring/${template}`, `${name}`, function (err) {
                             if (!err) {
                                 // 完成下载
                                 clearInterval(downloadTimer);
