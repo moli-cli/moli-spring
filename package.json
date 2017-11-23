@@ -1,0 +1,30 @@
+{
+  "name": "moli-spring",
+  "version": "0.0.2",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "bin": {
+    "moli-spring": "./bin/moli-spring.js"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moli-cli/moli-spring.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moli-cli/moli-spring/issues"
+  },
+  "homepage": "https://github.com/moli-cli/moli-spring#readme",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "chalk": "^2.1.0",
+    "resolve": "^1.4.0"
+  }
+}
