@@ -4,6 +4,8 @@ var log = require("../utils/moliLogUtil");
  * 获取帮助
  */
 function getHelp() {
+    log.success("moli spring command help info");
+    log.log();
     log.log("  Usage : ");
     log.log("");
     log.log("  moli spring [options]");
