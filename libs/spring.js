@@ -30,9 +30,9 @@ module.exports = {
                 });
                 //TODO 人机交互
                 inquirer.prompt([{
-                    type: 'list',
+                    type: 'rawlist',
                     name: 'selectRepo',
-                    message: 'Please Select Template:',
+                    message: 'Please enter template number::',
                     choices: repoNameData
                 }]).then(function (answers) {
                     var selectName = answers.selectRepo.split(' - ')[0];
